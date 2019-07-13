@@ -4,14 +4,35 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tic-Tac-Toe</title>
+
+	<title>Destin's Tic-Tac-Toe</title>
 	<link rel = "stylesheet" type = "text/css" href = "style.css" />
+	
 </head>
-<body onload= 'drawBoard();'>
-	<canvas id= "canvas" 
-	width="150"
-	height="150">
-	</canvas>
+<body>
+	<header>
+	<h1 id="gameTitle">Let's Play Tic-Tac-Toe</h1>
+	</header>
+	<h1 id="result"></h1>
+
+	<section id= "game">
+		<div id= "gameBoard">
+		<canvas id= "canvas1" width="150" height="150"> </canvas>
+		<canvas id= "canvas2" width="150" height="150"> </canvas>
+		<canvas id= "canvas3" width="150" height="150"> </canvas><br/>
+
+		<canvas id= "canvas4" width="150" height="150"> </canvas>
+		<canvas id= "canvas5" width="150" height="150"> </canvas>
+		<canvas id= "canvas6" width="150" height="150"> </canvas><br/>
+
+		<canvas id= "canvas7" width="150" height="150"> </canvas>
+		<canvas id= "canvas8" width="150" height="150"> </canvas>
+		<canvas id= "canvas9" width="150" height="150"> </canvas>
+
+	<center><button id="reset">Reset Game</button>
+	</center>
+	</div>
+	</section>
 
 	<script src="script.js"></script>
 </body>

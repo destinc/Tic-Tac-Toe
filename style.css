@@ -1,18 +1,73 @@
-canvas {
-    /* border: 1px solid black; */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: url('https://i.imgur.com/fhQ8kbt.png') no-repeat center center fixed; 
+    background: url('https://i.imgur.com/fhQ8kbt.png') no-repeat center center fixed;
     background-size: cover;
+    background-color: pink;
 }
 
-#canvas {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 800px;
-    }
+
+#gameTitle {
+    text-align: center;
+    margin: 50px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 34px;
+    color: rgba(243, 242, 242, 0.5);
+}
+
+#result {
+    font-size 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+canvas {
+    display: column;
+    border-right: 8px solid rgba(243, 242, 242, 0.5);
+    border-bottom: 8px solid rgba(243, 242, 242, 0.5);
+    text-align: center;
+}
+
+#canvas3, #canvas6, #canvas9 {
+    border-right: 0;
+}
+
+#canvas7, #canvas8, #canvas9 {
+    border-bottom: 0
+}
+    
+#canvas:hover {
+    background-color:  rgba(243, 242, 242, 0.5);
+}
+
+
+
+    
+
+#gameBoard {
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
+
+}
+button {
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #8c6529;
+    
+}
+button:hover {
+    background: rgba(243, 242, 242, 0.5);
+}
+
+canvas:hover {
+    background: rgba(243, 242, 242, 0.5);
 }
