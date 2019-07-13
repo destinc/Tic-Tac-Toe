@@ -18,4 +18,12 @@ window.onload = function() {
         [0,3,6], [1,4,7], [2,5,8],
         [0,4,8], [2,4,6]
     ];
+
+    let resetGame = document.getElementById("reset");
+    resetGame.addEventListener("click", newGame);
+
+    function newGame() {
+        document.location.reload();
+    }
 }
+console.log('test');
