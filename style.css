@@ -1,0 +1,119 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid | inline-grid;
+
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    margin: 25px;
+}
+
+.info {
+    text-align: center;
+    font-size 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color:rgba(243, 242, 242, 0.5);
+    margin: 25px;
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: #8c6529;
+}
+
+.photo {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: url('https://i.imgur.com/fhQ8kbt.png');
+    height: 100%;
+    width: 100%
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gameTitle {
+    text-align: center;
+    margin: 50px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 34px;
+    color: rgba(243, 242, 242, 0.5);
+}
+
+#result {
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+canvas {
+    display: column;
+    border-right: 8px solid rgba(243, 242, 242, 0.5);
+    border-bottom: 8px solid rgba(243, 242, 242, 0.5);
+    text-align: center;
+}
+
+#canvas3, #canvas6, #canvas9 {
+    border-right: 0;
+}
+
+#canvas7, #canvas8, #canvas9 {
+    border-bottom: 0
+}
+    
+#canvas:hover {
+    background-color:  rgba(243, 242, 242, 0.5);
+}  
+
+#game {
+    position: relative;;
+    width: 640px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#gameBoard {
+    position: relative;
+    margin: 0 auto;
+    height: 318px;
+   display: inline-block;
+}
+
+button {
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #8c6529;   
+}
+
+button:hover {
+    background: rgba(243, 242, 242, 0.5);
+}
+
+canvas:hover {
+    background: rgba(243, 242, 242, 0.5);
+}
+
