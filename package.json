@@ -1,0 +1,26 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A classic tic tac toe game",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js",
+    "fix-all": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destinc/Tic-Tac-Toe.git"
+  },
+  "author": "Destin Coleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/destinc/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/destinc/Tic-Tac-Toe#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}
