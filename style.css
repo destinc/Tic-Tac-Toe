@@ -1,10 +1,13 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .container {
-    display: grid | inline-grid;
+    display: grid;
 
 }
 
@@ -23,7 +26,7 @@
 
 .info {
     text-align: center;
-    font-size 40px;
+    font-size: 40px;
     font-family: "Lucida Console", Monaco, monospace;
     color:rgba(243, 242, 242, 0.5);
     margin: 25px;
@@ -46,7 +49,7 @@ body {
     background: url('https://i.imgur.com/fhQ8kbt.png');
     background-color: black;
     height: 100%;
-    width: 100%
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,4 +136,3 @@ button:hover {
 canvas:hover {
     background: rgba(243, 242, 242, 0.5);
 }
-
