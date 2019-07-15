@@ -3,9 +3,8 @@
 
 
 function redirect() {
-    window.location = 'main.html';
-}
-
+	window.location = 'main.html';
+   }
 window.onload = function() {
 
 	let num;
