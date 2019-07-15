@@ -2,12 +2,10 @@
   
 
 
-
+function redirect() {
+	window.location = 'main.html';
+   }
 window.onload = function() {
-
-	function redirect() {
-	 window.location = 'main.html';
-	}
 
 	let num;
 	let turn = 1;
