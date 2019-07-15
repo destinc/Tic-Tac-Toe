@@ -1,3 +1,3 @@
 
- # My version of the classic game of Tic-Tac-Toe
+# Simple 2 player Tic-Tac-Toe game using html/css/vanilla js
 
