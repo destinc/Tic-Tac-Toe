@@ -1,7 +1,6 @@
 
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -85,11 +84,7 @@ canvas {
 
 #canvas7, #canvas8, #canvas9 {
     border-bottom: 0
-}
-    
-#canvas:hover {
-    background-color:  rgba(243, 242, 242, 0.5);
-}  
+} 
 
 #game {
     position: relative;;
@@ -141,4 +136,3 @@ button:hover {
 canvas:hover {
     background: rgba(243, 242, 242, 0.5);
 }
-
