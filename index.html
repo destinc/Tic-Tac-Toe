@@ -1,115 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel = "stylesheet" type = "text/css" href = "style.css" />
-  <<title>Destin's CheckerGame</title>
-</head>
-<body background="https://i.imgur.com/LiENbZq.jpg">
-	<div id="board">
 
-        <div class="white tile"></div>
-        <div class="black tile"></div>
-        <div class="white tile"></div>
-        <div class="black tile"></div>
-        <div class="white tile"></div>
-        <div class="black tile"></div>
-        <div class="white tile"></div>
-        <div class="black tile"></div>
-            
-        <div class="black tile"></div>
-        <div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-        <div class="white tile"></div>
-        
-        <div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-        
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
 
-        <div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-        <div class="black tile"></div>
-        
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-        <div class="white tile"></div>
-        
-        <div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-        <div class="black tile"></div>
-        
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
-		<div class="black tile"></div>
-		<div class="white tile"></div>
+DOCTYPE html>
 
-        
-         <div class = 'bChecker' id = 'bChecker1'></div>
-         <div class = 'bChecker' id = 'bChecker2'></div>   
-         <div class = 'bChecker' id = 'bChecker3'></div>
-         <div class = 'bChecker' id = 'bChecker4'></div>
-         <div class = 'bChecker' id = 'bChecker5'></div>
-         <div class = 'bChecker' id = 'bChecker6'></div>
-         <div class = 'bChecker' id = 'bChecker7'></div>
-         <div class = 'bChecker' id = 'bChecker8'></div>
-         <div class = 'bChecker' id = 'bChecker9'></div>
-         <div class = 'bChecker' id = 'bChecker10'></div>
-         <div class = 'bChecker' id = 'bChecker11'></div>
-         <div class = 'bChecker' id = 'bChecker12'></div>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Tic-Tac-Toe Landing Page</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+	</head>
+	<body>
+		<div class= "wrapper">
+		<h1 class="welcome">Welcome to Destin's Game Room</h1>
 
-         <div class = 'rChecker' id = 'rChecker1'></div>
-         <div class = 'rChecker' id = 'rChecker2'></div>   
-         <div class = 'rChecker' id = 'rChecker3'></div>
-         <div class = 'rChecker' id = 'rChecker4'></div>
-         <div class = 'rChecker' id = 'rChecker5'></div>
-         <div class = 'rChecker' id = 'rChecker6'></div>
-         <div class = 'rChecker' id = 'rChecker7'></div>
-         <div class = 'rChecker' id = 'rChecker8'></div>
-         <div class = 'rChecker' id = 'rChecker9'></div>
-         <div class = 'rChecker' id = 'rChecker10'></div>
-         <div class = 'rChecker' id = 'rChecker11'></div>
-         <div class = 'rChecker' id = 'rChecker12'></div>
+		<p class="info">"This is classic tic-tac-toe. Player 1 will be 'X' and Player 2 will be 'O'.<br>
+				Take turns placing your characters on the board. A player wins when they get three in a row,<br>
+				either horizontally, vertically, or diaganolly. Push the button to get started."</p>
+		<div class= "photo">
+			<img src="https://i.imgur.com/F08PdkQ.png?1" alt="Tic-Tac-Toe" height="250" width="250">
+		</div>
 
-	</div>
-  <script src="script.js"></script>
-</body>
+			<div class= 'redirect'>
+				<input type ='button' onclick='redirect()' value="Play">
+			</div>
+		
+		</div>
+	<script src="script.js"></script>
+	</body>
 </html>

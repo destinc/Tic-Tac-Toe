@@ -1,291 +1,143 @@
 
-#board {
-    width: 600px;
-    height: 600px;
-    background-color: #ffbc00;
-    border: 10px solid rgba(0,0,0,0.65);
-    border-radius: 10px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid | inline-grid;
+
+}
+
+.wrapper {
+    text-align: center;
+    
+}
+
+.welcome {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    margin: 25px;
+}
+
+.info {
+    text-align: center;
+    font-size 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color:rgba(243, 242, 242, 0.5);
+    margin: 25px;
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: #8c6529;
+}
+
+.photo {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: url('https://i.imgur.com/fhQ8kbt.png');
+    background-color: black;
+    height: 100%;
+    width: 100%
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gameTitle {
+    text-align: center;
+    margin: 50px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 34px;
+    color: rgba(243, 242, 242, 0.5);
+}
+
+#result {
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+canvas {
+    display: column;
+    border-right: 8px solid rgba(243, 242, 242, 0.5);
+    border-bottom: 8px solid rgba(243, 242, 242, 0.5);
+    text-align: center;
+}
+
+#canvas3, #canvas6, #canvas9 {
+    border-right: 0;
+}
+
+#canvas7, #canvas8, #canvas9 {
+    border-bottom: 0
+}
+    
+#canvas:hover {
+    background-color:  rgba(243, 242, 242, 0.5);
+}  
+
+#game {
+    position: relative;;
+    width: 640px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#gameBoard {
     position: relative;
     margin: 0 auto;
-  }
-
-  .tile {
-    width: 75px;
-    height: 75px;
-    float: left;
-  }
-
-  .black {
-    background-color: rgba(0,0,0,0.67); 
+    height: 318px;
+   display: inline-block;
 }
 
-  .white {
-    background-color: rgba(241, 234, 172); 
+button {
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #8c6529;   
 }
 
-.checker {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-  
+.anime {
+    margin: 40px;
+    position: relative;
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    animation-duration: 3s;
+    animation-name: fadein;
+    
+
 }
 
-#rChecker1 {
-    margin: 10px 0 0 95px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-
-   
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-#rChecker2 {
-    margin: 10px 0 0 245px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
+button:hover {
+    background: rgba(243, 242, 242, 0.5);
 }
 
-#rChecker3 {
-    margin: 10px 0 0 390px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker4 {
-    margin: 10px 0 0 540px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker5 {
-    margin: 85px 0 0 15px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker6 {
-    margin: 85px 0 0 170px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker7 {
-    margin: 85px 0 0 320px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker8 {
-    margin: 85px 0 0 470px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-
-
-#rChecker9 {
-    margin: 160px 0 0 95px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker10 {
-    margin: 160px 0 0 240px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-
-#rChecker11 {
-    margin: 160px 0 0 390px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black;
-   
-}
-
-#rChecker12 {
-    margin: 160px 0 0 540px;
-    background-color: red; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px black; 
-}
-
-#bChecker1 {
-    margin: 540px 0 0 15px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker2 {
-    margin: 540px 0 0 165px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker3 {
-    margin: 540px 0 0 315px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker4 {
-    margin: 540px 0 0 465px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker5 {
-    margin: 465px 0 0 90px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker6 {
-    margin: 465px 0 0 240px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker7 {
-    margin: 465px 0 0 390px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker8 {
-    margin: 465px 0 0 540px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker9 {
-    margin: 390px 0 0 15px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker10 {
-    margin: 390px 0 0 165px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-#bChecker11 {
-    margin: 390px 0 0 315px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
-}
-
-
-#bChecker12 {
-    margin: 390px 0 0 465px;
-    background-color: black; 
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: absolute;
-    box-shadow: 3px 3px 2px rgb(119, 114, 114); 
+canvas:hover {
+    background: rgba(243, 242, 242, 0.5);
 }
 
