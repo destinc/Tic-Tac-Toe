@@ -1,11 +1,58 @@
 
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.container {
+    display: grid | inline-grid;
+
+}
+
+.wrapper {
+    text-align: center;
+    
+}
+
+.welcome {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    margin: 25px;
+
+}  
+
+.info {
+    text-align: center;
+    font-size 40px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color:rgba(243, 242, 242, 0.5);
+    margin: 25px;
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background-color: #8c6529;
+}
+
+.photo {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 body {
-    background: url('https://i.imgur.com/fhQ8kbt.png') no-repeat center center fixed;
+    background: url('https://i.imgur.com/fhQ8kbt.png');
+    background-color: black;
+    height: 100%;
+    width: 100%
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -15,6 +62,14 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 34px;
     color: rgba(243, 242, 242, 0.5);
+}
+
+#result {
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 canvas {
@@ -30,11 +85,7 @@ canvas {
 
 #canvas7, #canvas8, #canvas9 {
     border-bottom: 0
-}
-    
-#canvas:hover {
-    background-color:  rgba(243, 242, 242, 0.5);
-}  
+} 
 
 #game {
     position: relative;;
@@ -48,16 +99,37 @@ canvas {
     margin: 0 auto;
     height: 318px;
    display: inline-block;
-   
 }
+
 button {
     margin-top: 20px;
     width: 150px;
     height: 35px;
     font-size: 18px;
-    background-color: #8c6529;
-    
+    background-color: #8c6529;   
 }
+
+.anime {
+    margin: 40px;
+    position: relative;
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    animation-duration: 3s;
+    animation-name: fadein;
+    
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 button:hover {
     background: rgba(243, 242, 242, 0.5);
 }

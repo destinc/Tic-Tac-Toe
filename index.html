@@ -1,38 +1,33 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<title>Destin's Tic-Tac-Toe</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css" />
-	
-</head>
-<body>
-	<header>
-	<h1 id="gameTitle">Let's Play Tic-Tac-Toe</h1>
-	</header>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Tic-Tac-Toe Landing Page</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+	</head>
+	<body>
+		<div class= "wrapper">
+		<h1 class="welcome">Welcome to Destin's Game Room</h1>
 
-	<section id= "game">
-		<div id= "gameBoard">
-		<canvas id= "canvas1" width="100" height="100"> </canvas>
-		<canvas id= "canvas2" width="100" height="100"> </canvas>
-		<canvas id= "canvas3" width="100" height="100"> </canvas><br/>
+		<p class="info">"This is classic tic-tac-toe. Player 1 will be 'X' and Player 2 will be 'O'.<br>
+				Take turns placing your characters on the board. A player wins when they get three in a row,<br>
+				either horizontally, vertically, or diaganolly. Push the button to get started."</p>
+		<div class= "photo">
+			<img src="https://i.imgur.com/F08PdkQ.png?1" alt="Tic-Tac-Toe" height="250" width="250">
+		</div>
 
-		<canvas id= "canvas4" width="100" height="100"> </canvas>
-		<canvas id= "canvas5" width="100" height="100"> </canvas>
-		<canvas id= "canvas6" width="100" height="100"> </canvas><br/>
-
-		<canvas id= "canvas7" width="100" height="100"> </canvas>
-		<canvas id= "canvas8" width="100" height="100"> </canvas>
-		<canvas id= "canvas9" width="100" height="100"> </canvas>
-
-	<center><button id="reset">Reset Game</button>
-	</center>
-	</div>
-	</section>
-
+			<div class= 'redirect'>
+				<input type ='button' onclick='redirect()' value="Play">
+			</div>
+		
+		</div>
 	<script src="script.js"></script>
-</body>
+	</body>
 </html>

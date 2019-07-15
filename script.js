@@ -1,3 +1,11 @@
+
+  
+
+
+function redirect() {
+    window.location = 'main.html';
+}
+
 window.onload = function() {
 
 	let num;
@@ -51,26 +59,46 @@ window.onload = function() {
 					ctx.moveTo(15,15);
 					ctx.lineTo(85,85);
 					ctx.moveTo(85,15);
-                    ctx.lineTo(15,85);
-                    ctx.lineWidth = 10;
+          ctx.lineTo(15,85);
+          ctx.lineWidth = 10;
 					ctx.strokeStyle = "rgba(243, 242, 242, 0.5)";
 					ctx.stroke();
 					ctx.closePath();
 					marks[num-1] = 'X';
-				}
-				 else {
+
+				}else {
+
 					ctx.beginPath();
-                    ctx.arc(50, 50, 35, 0, 2 * Math.PI, false);
-                    ctx.lineWidth = 10;
+          ctx.arc(50, 50, 35, 0, 2 * Math.PI, false);
+          ctx.lineWidth = 10;
 					ctx.strokeStyle = "rgba(243, 242, 242, 0.5)";
 					ctx.stroke();
 					ctx.closePath();
-					marked[num-1] = 'O';
+
+					marks[num-1] = 'O';
 				 }
 				turn++;
                 marked[num-1] = true;
+
+                let win = marks[num - 1];
+                for(i = 0; i < winner.length; i++) {
+                    if((marks[winner[i][0]] == win) && (marks[winner[i][1]] == win) && (marks[winner[i][2]] == win)) {
+                        document.getElementById('result').innerText = "Congrats!  '" + win + "' wins!";
+                        gameOver = true;
+                    }    
+
+                }
+
+                if(turn > 9 && gameOver != true) {
+                    document.getElementById('result').innerText = "Nice Work! It's a Draw!";
+                }
+            }else {
+                alert("Nice game! Hit reset if you'd like to play another.");
             }
-        }
+        }else {
+            alert("Sorry. That square is taken. Try another.")
+        }   
+
     }
                 
 }
