@@ -13,6 +13,7 @@
 
 .wrapper {
     text-align: center;
+    
 }
 
 .welcome {
@@ -46,6 +47,7 @@ input {
 
 body {
     background: url('https://i.imgur.com/fhQ8kbt.png');
+    background-color: black;
     height: 100%;
     width: 100%
     background-position: center;
