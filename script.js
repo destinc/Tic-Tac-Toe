@@ -1,7 +1,4 @@
-  
-
-
-function redirect() {
+  function redirect() {
     window.location = '/Users/destinc/ga/Unit01/Project/Tic-Tac-Toe/main.html';
 }
 window.onload = function() {
