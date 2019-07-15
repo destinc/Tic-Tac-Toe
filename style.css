@@ -21,9 +21,8 @@
     font-size: 40px;
     font-family: "Lucida Console", Monaco, monospace;
     color: rgba(243, 242, 242, 0.5);
-    margin: 25px;
-
-}  
+    margin: 50px, 25px, 25px, 25px;
+}
 
 .info {
     text-align: center;
