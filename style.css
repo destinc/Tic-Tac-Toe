@@ -110,6 +110,27 @@ button {
     background-color: #8c6529;   
 }
 
+.anime {
+    margin: 40px;
+    position: relative;
+    font-size: 30px;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: rgba(243, 242, 242, 0.5);
+    animation-duration: 3s;
+    animation-name: fadein;
+    
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 button:hover {
     background: rgba(243, 242, 242, 0.5);
 }
