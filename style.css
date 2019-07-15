@@ -18,7 +18,7 @@
     font-size: 40px;
     font-family: "Lucida Console", Monaco, monospace;
     color: rgba(243, 242, 242, 0.5);
-    margin: 25px;
+    margin: 50px, 25px, 25px, 25px;
 }
 
 .info {
@@ -81,10 +81,6 @@ canvas {
 
 #canvas7, #canvas8, #canvas9 {
     border-bottom: 0
-}
-    
-#canvas:hover {
-    background-color:  rgba(243, 242, 242, 0.5);
 }  
 
 #game {
