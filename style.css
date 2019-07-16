@@ -85,6 +85,7 @@ canvas {
     width: 640px;
     height: 320px;
     margin: 0 auto;
+    text-align: center;
 }
 
 #gameBoard {
