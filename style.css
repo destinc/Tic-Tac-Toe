@@ -93,6 +93,7 @@ canvas {
     margin: 0 auto;
     height: 318px;
    display: inline-block;
+   text-align: center
 }
 
 button {
