@@ -1,11 +1,5 @@
 
 
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     display: grid;
 
@@ -26,7 +20,7 @@
 
 .info {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Lucida Console", Monaco, monospace;
     color:rgba(243, 242, 242, 0.5);
     margin: 25px;
